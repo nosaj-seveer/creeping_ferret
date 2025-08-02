@@ -1,5 +1,3 @@
-# creeping_ferret
-xss finder
 # XSS Scanner - Fixed Version
 
 ## Installation

